@@ -24,7 +24,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(imagens/pattern-background-desktop.svg);
+    /* background-image: url(imagens/pattern-background-desktop.svg); */
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: var(--cor-fundo);
 }
@@ -128,6 +130,12 @@ h4 {
     right: 20px;
     top: 20px;
     border: none;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+#theme-switch:hover {
+    transform: scale(1.2);
 }
 
 #theme-switch svg {
